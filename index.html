@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How I archived 13,019 emails in seven minutes with one AI prompt.">
+  <meta name="theme-color" content="#101010">
+  <title>Email-Assassin | 13,019 emails to zero</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f6f3ec;
+      --muted: #a7a39a;
+      --line: #373631;
+      --paper: #101010;
+      --panel: #1a1a18;
+      --accent: #ff5a36;
+      --accent-soft: #ffb39d;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.45;
+    }
+    body::before {
+      position: fixed;
+      z-index: -1;
+      inset: 0;
+      pointer-events: none;
+      content: "";
+      opacity: .28;
+      background-image: radial-gradient(#6d6a60 0.6px, transparent 0.6px);
+      background-size: 17px 17px;
+    }
+    .wrap { width: min(100% - 36px, 720px); margin: 0 auto; }
+    header { padding: 28px 0 18px; display: flex; justify-content: space-between; align-items: center; }
+    .mark { color: var(--accent); font: 700 13px/1 Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+    .handle { color: var(--muted); font: 12px Arial, sans-serif; }
+    main { padding: 54px 0 80px; }
+    .eyebrow { color: var(--accent-soft); font: 700 12px Arial, sans-serif; letter-spacing: .1em; text-transform: uppercase; }
+    h1 { max-width: 670px; margin: 14px 0 22px; font-size: clamp(42px, 11vw, 84px); line-height: .95; letter-spacing: -.04em; }
+    .dek { max-width: 560px; margin: 0; color: var(--muted); font: 18px/1.5 Arial, sans-serif; }
+    .stat { display: flex; gap: 22px; align-items: baseline; margin: 40px 0; padding: 18px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .stat strong { color: var(--accent); font-size: clamp(38px, 10vw, 72px); line-height: 1; }
+    .stat span { color: var(--muted); font: 700 12px Arial, sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+    .actions { display: grid; gap: 12px; }
+    a.button { display: flex; min-height: 62px; align-items: center; justify-content: space-between; padding: 0 20px; color: #101010; background: var(--accent); font: 700 16px Arial, sans-serif; text-decoration: none; transition: transform .18s ease, background .18s ease; }
+    a.button::after { content: "->"; font-size: 20px; }
+    a.button.secondary { color: var(--ink); background: transparent; border: 1px solid var(--line); }
+    a.button:hover, a.button:focus-visible { background: #ff795b; transform: translateY(-2px); }
+    a.button.secondary:hover, a.button.secondary:focus-visible { background: var(--panel); }
+    .proof { display: grid; gap: 12px; margin-top: 64px; }
+    .proof-label { margin-bottom: 2px; font: 700 12px Arial, sans-serif; letter-spacing: .1em; text-transform: uppercase; }
+    .proof-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .shot { min-height: 155px; padding: 15px; border: 1px solid var(--line); background: var(--panel); }
+    .shot span { display: block; margin-bottom: 48px; color: var(--muted); font: 11px Arial, sans-serif; }
+    .shot strong { font-size: 28px; }
+    .shot.after strong { color: var(--accent-soft); }
+    .prompt { margin-top: 64px; padding: 24px; border-left: 3px solid var(--accent); background: var(--panel); }
+    .prompt h2 { margin: 0 0 9px; font-size: 25px; }
+    .prompt p { margin: 0; color: var(--muted); font: 14px/1.55 Arial, sans-serif; }
+    footer { padding: 20px 0 34px; color: var(--muted); border-top: 1px solid var(--line); font: 12px Arial, sans-serif; }
+    footer a { color: var(--accent-soft); }
+    @media (max-width: 480px) { .proof-grid { grid-template-columns: 1fr; } .shot { min-height: 120px; } .shot span { margin-bottom: 22px; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } a.button { transition: none; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark">Email-Assassin / 001</div>
+      <div class="handle">@prometheus.iq_</div>
+    </header>
+
+    <main>
+      <div class="eyebrow">A tiny AI build with a very large inbox</div>
+      <h1>13,019 emails.<br>7 minutes.<br>Zero clutter.</h1>
+      <p class="dek">GWOT Vet | MBA | Part-time AI Engineer. I was drowning in a 0.33GB Yahoo cache, so I made ChatGPT help me archive the noise.</p>
+
+      <div class="stat"><strong>13,019 -> 0</strong><span>archive only<br>nothing deleted</span></div>
+
+      <div class="actions">
+        <a class="button" href="README.md#copy-my-prompt">Copy Prompt</a>
+        <a class="button secondary" href="https://www.instagram.com/prometheus.iq_" target="_blank" rel="noopener">Follow Me For More AI Builds</a>
+      </div>
+
+      <section class="proof" aria-label="Inbox before and after">
+        <div class="proof-label">The proof</div>
+        <div class="proof-grid">
+          <div class="shot"><span>BEFORE.PNG</span><strong>13,019</strong></div>
+          <div class="shot after"><span>AFTER.PNG</span><strong>0 unread</strong></div>
+        </div>
+      </section>
+
+      <section class="prompt">
+        <h2>Steal it - Free</h2>
+        <p>One prompt. Seven minutes. A cleaner inbox. The exact prompt is waiting in the README.</p>
+      </section>
+    </main>
+
+    <footer>Built for people with too many tabs. <a href="https://www.instagram.com/prometheus.iq_">@prometheus.iq_</a></footer>
+  </div>
+</body>
+</html>
