@@ -1,0 +1,14 @@
+# macOS metadata
+.DS_Store
+
+# Installed dependencies
+node_modules/
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+
+# Per-device Obsidian UI state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
