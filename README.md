@@ -32,7 +32,11 @@ Paste this into ChatGPT, connect it to your inbox, and make it your own:
 
 | Time | Cost | Risk |
 | --- | --- | --- |
-| **7 mins** | **$0** | **0** - archive only |
+| **7 mins** | **$0** | Review required — archiving can still hide important mail |
+
+### Safety note
+
+Archiving is reversible, but it is not risk-free. Review the proposed selection, protect important mail, and test a small batch before approving a larger action. Never grant an inbox tool permission to delete messages just to reproduce this example. This repository documents a personal experiment; it does not include a verified, ready-to-run inbox agent or a complete reusable prompt.
 
 ## Steal it - Free
 
